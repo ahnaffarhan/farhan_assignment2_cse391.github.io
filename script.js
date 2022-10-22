@@ -47,11 +47,11 @@ function getInputValue() {
     var optionVal = document.getElementById("conversion-unit").value;
     var result = 0;
     if (optionVal.match("lbkg")) {
-        result = (inputVal * 0.45359);
+        result = (inputVal * 0.4536);
         document.getElementById("converter-result").innerHTML = result + " KG";
     }
     else {
-        result = (inputVal * 2.20462);
+        result = (inputVal * 2.2046);
         document.getElementById("converter-result").innerHTML = result + " LB";
     }
 }
