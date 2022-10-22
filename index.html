@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSE391 Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body onload="fetchQuote(quotes, author),addNumbers()">
+
+
+
+    <h1 id="header">ASSIGNMENT 2 - CSE391</h1>
+    <nav class="navigationbar">
+        <ul>
+            <li><a href="#QuoteBox"><b>Quote Box</b></a></li>
+            <li><a href="#WeightConverter"><b>Hero Converter</b></a></li>
+            <li><a href="#Numberseries"><b>Number Series</b></a></li>
+            <li><a href="#Magicbox"><b>Magic Box</b></a></li>
+        </ul>
+    </nav>
+
+    
+
+    <section id="QuoteBox">
+
+        <div class="quote-box">
+
+            <div id="quotes">
+                <div id="text">"A Quote"</div>
+                <div id="author">- Md. Ahnaf Farhan</div>
+            </div>
+            <div id="buttons">
+                <button onclick="button1()" type="button" id="button1"></button>
+                <button onclick="button3()" type="button" id="button3"></button>
+                <button onclick="button2()" type="button" id="button2"></button>
+                <button onclick="button4()" type="button" id="button4"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="WeightConverter">
+        <div class="container-converter">
+
+            <div id="converter">
+                <h1 class="item-header">Hero Converter.</h1>
+                <span id="converter-text">Convert: </span><input id="converter-input">
+                <select name="conversion-unit" id="conversion-unit">
+                    <option value="lbkg">LB to KG</option>
+                    <option value="kglb">KG to LB</option>
+                </select>
+                <button onclick="getInputValue()" type="button" id="converter-button">Go</button>
+                <span id="converter-result"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="Numberseries">
+        <div class="container-math">
+            <h1 class="item-header">Find Min, Max, Avg, Sum and Reverse.</h1>
+            <form action="#"> <span id="math-input">Input Series of Number:
+                </span><input id="math-input-numbers" type="text">
+                <div id="max-text">Max: <span id="max">0</span></div>
+
+                <div id="min-text">Min: <span id="min">0</span></div>
+
+                <div id="sum-text">Sum: <span id="sum">0</span></div>
+
+                <div id="avg-text">Average: <span id="avg">0</span></div>
+
+                <div id="reverse-text">Reverse Order: <span id="reverse">Null</span></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="Magicbox">
+        <div class="container-magic">
+            <h1 class="item-header" id="magic-header">Magic Box!</h1>
+            <textarea id="magic" rows="15" cols="54"></textarea>
+            <div id="magic-buttons">
+                <button onclick="clearAll()" type="button" id="clear">Clear it</button>
+                <button onclick="capitalize()" type="button" id="caps" value="OFF">Capitalize</button>
+                <button onclick="sortLines()" type="button" id="sort">Sort</button>
+                <button onclick="reverseLines()" type="button" id="reverse-magic">Reverse</button>
+                <button onclick="stripBlank()" type="button" id="strip">Strip Blank</button>
+                <button onclick="addLineNumbers()" type="button" id="addNum">Add Numbers</button>
+                <button onclick="shuffle()" type="button" id="shuffle">Shuffle</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js">
+    
+    </script>
+
+
+</body>
+
+
+</html>
